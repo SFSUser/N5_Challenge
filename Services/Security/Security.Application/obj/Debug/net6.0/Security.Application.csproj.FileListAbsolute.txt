@@ -1,0 +1,15 @@
+d:\users\SFS\Desktop\N5\Services\Security\Security.Application\obj\Debug\net6.0\Security.Application.csproj.AssemblyReference.cache
+d:\users\SFS\Desktop\N5\Services\Security\Security.Application\obj\Debug\net6.0\Security.Application.GeneratedMSBuildEditorConfig.editorconfig
+d:\users\SFS\Desktop\N5\Services\Security\Security.Application\obj\Debug\net6.0\Security.Application.AssemblyInfoInputs.cache
+d:\users\SFS\Desktop\N5\Services\Security\Security.Application\obj\Debug\net6.0\Security.Application.AssemblyInfo.cs
+d:\users\SFS\Desktop\N5\Services\Security\Security.Application\obj\Debug\net6.0\Security.Application.csproj.CoreCompileInputs.cache
+D:\users\SFS\Desktop\N5\Services\Security\Security.Application\bin\Debug\net6.0\Security.Application.deps.json
+D:\users\SFS\Desktop\N5\Services\Security\Security.Application\bin\Debug\net6.0\Security.Application.dll
+D:\users\SFS\Desktop\N5\Services\Security\Security.Application\bin\Debug\net6.0\Security.Application.pdb
+D:\users\SFS\Desktop\N5\Services\Security\Security.Application\bin\Debug\net6.0\Security.Core.dll
+D:\users\SFS\Desktop\N5\Services\Security\Security.Application\bin\Debug\net6.0\Security.Core.pdb
+D:\users\SFS\Desktop\N5\Services\Security\Security.Application\obj\Debug\net6.0\Security.Application.csproj.CopyComplete
+D:\users\SFS\Desktop\N5\Services\Security\Security.Application\obj\Debug\net6.0\Security.Application.dll
+D:\users\SFS\Desktop\N5\Services\Security\Security.Application\obj\Debug\net6.0\refint\Security.Application.dll
+D:\users\SFS\Desktop\N5\Services\Security\Security.Application\obj\Debug\net6.0\Security.Application.pdb
+D:\users\SFS\Desktop\N5\Services\Security\Security.Application\obj\Debug\net6.0\ref\Security.Application.dll

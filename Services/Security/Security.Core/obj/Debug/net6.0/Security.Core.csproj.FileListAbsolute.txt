@@ -1,0 +1,14 @@
+D:\users\SFS\Desktop\N5\Services\Security\Security.Core\bin\Debug\net6.0\Security.Core.deps.json
+D:\users\SFS\Desktop\N5\Services\Security\Security.Core\bin\Debug\net6.0\Security.Core.runtimeconfig.json
+D:\users\SFS\Desktop\N5\Services\Security\Security.Core\bin\Debug\net6.0\Security.Core.dll
+D:\users\SFS\Desktop\N5\Services\Security\Security.Core\bin\Debug\net6.0\Security.Core.pdb
+D:\users\SFS\Desktop\N5\Services\Security\Security.Core\obj\Debug\net6.0\Security.Core.csproj.AssemblyReference.cache
+D:\users\SFS\Desktop\N5\Services\Security\Security.Core\obj\Debug\net6.0\Security.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\users\SFS\Desktop\N5\Services\Security\Security.Core\obj\Debug\net6.0\Security.Core.AssemblyInfoInputs.cache
+D:\users\SFS\Desktop\N5\Services\Security\Security.Core\obj\Debug\net6.0\Security.Core.AssemblyInfo.cs
+D:\users\SFS\Desktop\N5\Services\Security\Security.Core\obj\Debug\net6.0\Security.Core.csproj.CoreCompileInputs.cache
+D:\users\SFS\Desktop\N5\Services\Security\Security.Core\obj\Debug\net6.0\Security.Core.dll
+D:\users\SFS\Desktop\N5\Services\Security\Security.Core\obj\Debug\net6.0\refint\Security.Core.dll
+D:\users\SFS\Desktop\N5\Services\Security\Security.Core\obj\Debug\net6.0\Security.Core.pdb
+D:\users\SFS\Desktop\N5\Services\Security\Security.Core\obj\Debug\net6.0\Security.Core.genruntimeconfig.cache
+D:\users\SFS\Desktop\N5\Services\Security\Security.Core\obj\Debug\net6.0\ref\Security.Core.dll

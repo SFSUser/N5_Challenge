@@ -1,0 +1,17 @@
+d:\users\SFS\Desktop\N5\Services\Security\Security.Infrastructure\bin\Debug\net6.0\Security.Infrastructure.deps.json
+d:\users\SFS\Desktop\N5\Services\Security\Security.Infrastructure\bin\Debug\net6.0\Security.Infrastructure.runtimeconfig.json
+d:\users\SFS\Desktop\N5\Services\Security\Security.Infrastructure\bin\Debug\net6.0\Security.Infrastructure.dll
+d:\users\SFS\Desktop\N5\Services\Security\Security.Infrastructure\bin\Debug\net6.0\Security.Infrastructure.pdb
+d:\users\SFS\Desktop\N5\Services\Security\Security.Infrastructure\bin\Debug\net6.0\Security.Core.dll
+d:\users\SFS\Desktop\N5\Services\Security\Security.Infrastructure\bin\Debug\net6.0\Security.Core.pdb
+d:\users\SFS\Desktop\N5\Services\Security\Security.Infrastructure\obj\Debug\net6.0\Security.Infrastructure.csproj.AssemblyReference.cache
+d:\users\SFS\Desktop\N5\Services\Security\Security.Infrastructure\obj\Debug\net6.0\Security.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+d:\users\SFS\Desktop\N5\Services\Security\Security.Infrastructure\obj\Debug\net6.0\Security.Infrastructure.AssemblyInfoInputs.cache
+d:\users\SFS\Desktop\N5\Services\Security\Security.Infrastructure\obj\Debug\net6.0\Security.Infrastructure.AssemblyInfo.cs
+d:\users\SFS\Desktop\N5\Services\Security\Security.Infrastructure\obj\Debug\net6.0\Security.Infrastructure.csproj.CoreCompileInputs.cache
+d:\users\SFS\Desktop\N5\Services\Security\Security.Infrastructure\obj\Debug\net6.0\Security.Infrastructure.csproj.CopyComplete
+d:\users\SFS\Desktop\N5\Services\Security\Security.Infrastructure\obj\Debug\net6.0\Security.Infrastructure.dll
+d:\users\SFS\Desktop\N5\Services\Security\Security.Infrastructure\obj\Debug\net6.0\refint\Security.Infrastructure.dll
+d:\users\SFS\Desktop\N5\Services\Security\Security.Infrastructure\obj\Debug\net6.0\Security.Infrastructure.pdb
+d:\users\SFS\Desktop\N5\Services\Security\Security.Infrastructure\obj\Debug\net6.0\Security.Infrastructure.genruntimeconfig.cache
+d:\users\SFS\Desktop\N5\Services\Security\Security.Infrastructure\obj\Debug\net6.0\ref\Security.Infrastructure.dll
