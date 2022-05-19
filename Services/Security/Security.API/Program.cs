@@ -14,6 +14,7 @@ using Security.Infrastructure.Data;
 using Microsoft.OpenApi.Models;
 using Security.Core.Repositories.Command;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 //using Microsoft.Extensions.DependencyInjection.Abstractions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -24,16 +25,13 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
-//var serviceConfig = new MediatRServiceConfiguration();
-//ServiceRegistrar.AddRequiredServices(services, serviceConfig);
-//services.AddScoped<IRequestHandler<MyCommand, MyCommandResponse>, MyCommandHandler>();
+builder.Services.AddRazorPages();
+builder.Services.AddMvc();
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<SecurityContext>( options => options.UseSqlServer(connectionString));
 
 // Register dependencies
-//builder.Services.AddAutoMapper(typeof(Startup));
 builder.Services.AddMediatR(typeof(CreateCustomerHandler).GetTypeInfo().Assembly);
 builder.Services.AddScoped(typeof(IQueryRepository<>), typeof(QueryRepository<>));
 builder.Services.AddTransient<ICustomerQueryRepository, CustomerQueryRepository>();
@@ -57,12 +55,17 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-/*app.UseEndpoints(endpoints =>
+app.UseFileServer(new FileServerOptions
 {
-    endpoints.MapControllers();
-});*/
+    FileProvider = new PhysicalFileProvider(
+           Path.Combine(builder.Environment.ContentRootPath, "dist")),
+    RequestPath = "/dist",
+    EnableDirectoryBrowsing = true
+});
 
 app.MapControllers();
+app.MapRazorPages();
+app.UseStaticFiles();
 
 app.Run();
 

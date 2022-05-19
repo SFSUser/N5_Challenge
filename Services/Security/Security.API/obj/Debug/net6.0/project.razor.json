@@ -16296,6 +16296,12 @@
     "CSharpLanguageVersion": 1000
   },
   "RootNamespace": "Security.API",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "c:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.API\\Views\\Home\\Home.cshtml",
+      "TargetPath": "Views\\Home\\Home.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }

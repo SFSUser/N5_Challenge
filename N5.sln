@@ -15,8 +15,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security.Core", "Services\S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security.Infrastructure", "Services\Security\Security.Infrastructure\Security.Infrastructure.csproj", "{D0D6126F-42E3-4660-92A6-8576F51DCA74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security.Presentation", "Services\Security\Security.Presentation\Security.Presentation.csproj", "{F79F658F-AB17-4053-BB4F-E3682E57884F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
