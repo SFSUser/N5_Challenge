@@ -10,6 +10,6 @@ namespace Security.Infrastructure.Data
 
         }
 
-        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Permissions> Customers { get; set; }
     }
 }

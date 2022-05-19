@@ -28,8 +28,9 @@ builder.Services.AddSwaggerGen();
 //var serviceConfig = new MediatRServiceConfiguration();
 //ServiceRegistrar.AddRequiredServices(services, serviceConfig);
 //services.AddScoped<IRequestHandler<MyCommand, MyCommandResponse>, MyCommandHandler>();
-///*Configuration.GetConnectionString("DefaultConnection"))*/
-builder.Services.AddDbContext<SecurityContext>(options => options.UseSqlite(""));
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<SecurityContext>( options => options.UseSqlServer(connectionString));
 
 // Register dependencies
 //builder.Services.AddAutoMapper(typeof(Startup));
@@ -38,6 +39,9 @@ builder.Services.AddScoped(typeof(IQueryRepository<>), typeof(QueryRepository<>)
 builder.Services.AddTransient<ICustomerQueryRepository, CustomerQueryRepository>();
 builder.Services.AddScoped(typeof(ICommandRepository<>), typeof(CommandRepository<>));
 builder.Services.AddTransient<ICustomerCommandRepository, CustomerCommandRepository>();
+
+builder.Services.AddTransient<IPermissionsQueryRepository, PermissionsQueryRepository>();
+builder.Services.AddTransient<IPermissionsCommandRepository, PermissionsCommandRepository>();
 /**/
 
 var app = builder.Build();

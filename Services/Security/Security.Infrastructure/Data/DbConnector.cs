@@ -1,6 +1,7 @@
 using Microsoft.Data.Sqlite;
 using Microsoft.Extensions.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace Security.Infrastructure.Data
 {
@@ -15,13 +16,13 @@ namespace Security.Infrastructure.Data
 
         public IDbConnection CreateConnection()
         {
-            string _connectionString = _configuration.GetConnectionString("DefaultConnection");
             //return new SqliteConnection(_connectionString);
             /// <summary>
             /// "Server=TPCCP-DB04\\SCBACK;Database=tpStandardsRegional;Trusted_Connection=True;"
             /// </summary>
             /// <returns></returns>
-            return new SqlConnection("Server=DESKTOP-2I0HQ35\\SQLEXPRESS;Database=DESKTOP-2I0HQ35\\SQLEXPRESS;Trusted_Connection=True");
+            string _connectionString = _configuration.GetConnectionString("DefaultConnection");
+            return new SqlConnection(_connectionString);
         }
     }
 }

@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "D:\\users\\SFS\\Desktop\\N5\\Services\\Security\\Security.Infrastructure\\Security.Infrastructure.csproj": {}
+    "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Infrastructure\\Security.Infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\users\\SFS\\Desktop\\N5\\Services\\Security\\Security.Core\\Security.Core.csproj": {
+    "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Core\\Security.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\users\\SFS\\Desktop\\N5\\Services\\Security\\Security.Core\\Security.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Core\\Security.Core.csproj",
         "projectName": "Security.Core",
-        "projectPath": "D:\\users\\SFS\\Desktop\\N5\\Services\\Security\\Security.Core\\Security.Core.csproj",
-        "packagesPath": "C:\\Users\\SFS\\.nuget\\packages\\",
-        "outputPath": "D:\\users\\SFS\\Desktop\\N5\\Services\\Security\\Security.Core\\obj\\",
+        "projectPath": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Core\\Security.Core.csproj",
+        "packagesPath": "C:\\Users\\Emerson Fierro S\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\SFS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Emerson Fierro S\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -86,30 +88,32 @@
         }
       }
     },
-    "D:\\users\\SFS\\Desktop\\N5\\Services\\Security\\Security.Infrastructure\\Security.Infrastructure.csproj": {
+    "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Infrastructure\\Security.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\users\\SFS\\Desktop\\N5\\Services\\Security\\Security.Infrastructure\\Security.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Infrastructure\\Security.Infrastructure.csproj",
         "projectName": "Security.Infrastructure",
-        "projectPath": "D:\\users\\SFS\\Desktop\\N5\\Services\\Security\\Security.Infrastructure\\Security.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\SFS\\.nuget\\packages\\",
-        "outputPath": "D:\\users\\SFS\\Desktop\\N5\\Services\\Security\\Security.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Infrastructure\\Security.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Emerson Fierro S\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\SFS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Emerson Fierro S\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\users\\SFS\\Desktop\\N5\\Services\\Security\\Security.Core\\Security.Core.csproj": {
-                "projectPath": "D:\\users\\SFS\\Desktop\\N5\\Services\\Security\\Security.Core\\Security.Core.csproj"
+              "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Core\\Security.Core.csproj": {
+                "projectPath": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Core\\Security.Core.csproj"
               }
             }
           }
@@ -155,6 +159,10 @@
             "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
             }
           },
           "imports": [

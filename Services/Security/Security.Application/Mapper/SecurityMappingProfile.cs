@@ -12,6 +12,9 @@ namespace Security.Application.Mapper
             CreateMap<Customer, CustomerResponse>().ReverseMap();
             CreateMap<Customer, CreateCustomerCommand>().ReverseMap();
             CreateMap<Customer, EditCustomerCommand>().ReverseMap();
+
+            CreateMap<Permissions, PermissionResponse>().ReverseMap();
+            CreateMap<Permissions, ModifyPermissionCommand>().ReverseMap();
         }
     }
 }

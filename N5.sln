@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security.Core", "Services\S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security.Infrastructure", "Services\Security\Security.Infrastructure\Security.Infrastructure.csproj", "{D0D6126F-42E3-4660-92A6-8576F51DCA74}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security.Presentation", "Services\Security\Security.Presentation\Security.Presentation.csproj", "{F79F658F-AB17-4053-BB4F-E3682E57884F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +42,10 @@ Global
 		{D0D6126F-42E3-4660-92A6-8576F51DCA74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0D6126F-42E3-4660-92A6-8576F51DCA74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0D6126F-42E3-4660-92A6-8576F51DCA74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F79F658F-AB17-4053-BB4F-E3682E57884F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F79F658F-AB17-4053-BB4F-E3682E57884F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F79F658F-AB17-4053-BB4F-E3682E57884F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F79F658F-AB17-4053-BB4F-E3682E57884F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B7D44791-920E-4185-8981-44811EE5F834} = {86DA836B-7B84-4EF8-B499-06A3B278239A}
@@ -47,5 +53,6 @@ Global
 		{A8110C03-1B2C-44E0-A169-B0433674F8B7} = {B7D44791-920E-4185-8981-44811EE5F834}
 		{90C11667-5CFF-4F02-A536-0045FA06E5A8} = {B7D44791-920E-4185-8981-44811EE5F834}
 		{D0D6126F-42E3-4660-92A6-8576F51DCA74} = {B7D44791-920E-4185-8981-44811EE5F834}
+		{F79F658F-AB17-4053-BB4F-E3682E57884F} = {B7D44791-920E-4185-8981-44811EE5F834}
 	EndGlobalSection
 EndGlobal

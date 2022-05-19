@@ -15,3 +15,20 @@ d:\users\SFS\Desktop\N5\Services\Security\Security.Infrastructure\obj\Debug\net6
 d:\users\SFS\Desktop\N5\Services\Security\Security.Infrastructure\obj\Debug\net6.0\Security.Infrastructure.pdb
 d:\users\SFS\Desktop\N5\Services\Security\Security.Infrastructure\obj\Debug\net6.0\Security.Infrastructure.genruntimeconfig.cache
 d:\users\SFS\Desktop\N5\Services\Security\Security.Infrastructure\obj\Debug\net6.0\ref\Security.Infrastructure.dll
+C:\Users\Emerson Fierro S\Desktop\N5_challenge\Services\Security\Security.Infrastructure\bin\Debug\net6.0\Security.Infrastructure.deps.json
+C:\Users\Emerson Fierro S\Desktop\N5_challenge\Services\Security\Security.Infrastructure\bin\Debug\net6.0\Security.Infrastructure.runtimeconfig.json
+C:\Users\Emerson Fierro S\Desktop\N5_challenge\Services\Security\Security.Infrastructure\bin\Debug\net6.0\Security.Infrastructure.dll
+C:\Users\Emerson Fierro S\Desktop\N5_challenge\Services\Security\Security.Infrastructure\bin\Debug\net6.0\Security.Infrastructure.pdb
+C:\Users\Emerson Fierro S\Desktop\N5_challenge\Services\Security\Security.Infrastructure\bin\Debug\net6.0\Security.Core.dll
+C:\Users\Emerson Fierro S\Desktop\N5_challenge\Services\Security\Security.Infrastructure\bin\Debug\net6.0\Security.Core.pdb
+C:\Users\Emerson Fierro S\Desktop\N5_challenge\Services\Security\Security.Infrastructure\obj\Debug\net6.0\Security.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Emerson Fierro S\Desktop\N5_challenge\Services\Security\Security.Infrastructure\obj\Debug\net6.0\Security.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Emerson Fierro S\Desktop\N5_challenge\Services\Security\Security.Infrastructure\obj\Debug\net6.0\Security.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Emerson Fierro S\Desktop\N5_challenge\Services\Security\Security.Infrastructure\obj\Debug\net6.0\Security.Infrastructure.AssemblyInfo.cs
+C:\Users\Emerson Fierro S\Desktop\N5_challenge\Services\Security\Security.Infrastructure\obj\Debug\net6.0\Security.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Emerson Fierro S\Desktop\N5_challenge\Services\Security\Security.Infrastructure\obj\Debug\net6.0\Security.Infrastructure.csproj.CopyComplete
+C:\Users\Emerson Fierro S\Desktop\N5_challenge\Services\Security\Security.Infrastructure\obj\Debug\net6.0\Security.Infrastructure.dll
+C:\Users\Emerson Fierro S\Desktop\N5_challenge\Services\Security\Security.Infrastructure\obj\Debug\net6.0\refint\Security.Infrastructure.dll
+C:\Users\Emerson Fierro S\Desktop\N5_challenge\Services\Security\Security.Infrastructure\obj\Debug\net6.0\Security.Infrastructure.pdb
+C:\Users\Emerson Fierro S\Desktop\N5_challenge\Services\Security\Security.Infrastructure\obj\Debug\net6.0\Security.Infrastructure.genruntimeconfig.cache
+C:\Users\Emerson Fierro S\Desktop\N5_challenge\Services\Security\Security.Infrastructure\obj\Debug\net6.0\ref\Security.Infrastructure.dll

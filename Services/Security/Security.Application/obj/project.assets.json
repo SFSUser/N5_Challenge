@@ -1305,32 +1305,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SFS\\.nuget\\packages\\": {}
+    "C:\\Users\\Emerson Fierro S\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\users\\SFS\\Desktop\\N5\\Services\\Security\\Security.Application\\Security.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Application\\Security.Application.csproj",
       "projectName": "Security.Application",
-      "projectPath": "D:\\users\\SFS\\Desktop\\N5\\Services\\Security\\Security.Application\\Security.Application.csproj",
-      "packagesPath": "C:\\Users\\SFS\\.nuget\\packages\\",
-      "outputPath": "D:\\users\\SFS\\Desktop\\N5\\Services\\Security\\Security.Application\\obj\\",
+      "projectPath": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Application\\Security.Application.csproj",
+      "packagesPath": "C:\\Users\\Emerson Fierro S\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\SFS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Emerson Fierro S\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\users\\SFS\\Desktop\\N5\\Services\\Security\\Security.Core\\Security.Core.csproj": {
-              "projectPath": "D:\\users\\SFS\\Desktop\\N5\\Services\\Security\\Security.Core\\Security.Core.csproj"
+            "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Core\\Security.Core.csproj": {
+              "projectPath": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Core\\Security.Core.csproj"
             }
           }
         }
