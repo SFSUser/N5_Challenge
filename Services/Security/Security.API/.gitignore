@@ -8,6 +8,7 @@ scripts/flow/*/.flowconfig
 .grunt
 _SpecRunner.html
 __benchmarks__
+obj/
 build/
 build2/
 remote-repo/
