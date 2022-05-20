@@ -8,9 +8,9 @@ export default class PermissionBL {
     public static async modifyPermission(user: Permission): Promise<HttpResponse> {
         let result: HttpResponse = null;
         if(user.id > 0){
-            result = await Request.put(USER_ACTIONS.API_MODIFY_PERMISSION, user);
+            result = await Request.post(USER_ACTIONS.API_MODIFY_PERMISSION + user.id, user)
         } else {
-            result = await Request.put(USER_ACTIONS.API_MODIFY_PERMISSION, user);
+            result = await Request.post(USER_ACTIONS.API_MODIFY_PERMISSION + user.id, user);
         }
         var response = new HttpResponse();
         response.result = true;
@@ -25,7 +25,7 @@ export default class PermissionBL {
     }
 
     public static async getPermission(id: number) {
-        let response = await Request.get(USER_ACTIONS.API_REQUEST_PERMISION);
+        let response = await Request.get(USER_ACTIONS.API_REQUEST_PERMISION + id);
         response.data = response.data;
         response.data = response.getElement<Permission>(Permission);
         return response;

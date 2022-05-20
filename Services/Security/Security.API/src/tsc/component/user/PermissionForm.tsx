@@ -47,7 +47,7 @@ export default class PermissionForm extends Component<PermissionFormProp, Permis
     
     render(){
         let me = this;
-        FormHelper.initialize( this, "user");
+        FormHelper.initialize( this, "permission");
         return(
             <>
                 <Form onSubmit={ e => me.handleSubmit(e) }>
@@ -55,13 +55,13 @@ export default class PermissionForm extends Component<PermissionFormProp, Permis
                         <Col sm="12" md="6">
                             <Form.Group className="mb-3">
                                 <Form.Label>Nombre</Form.Label>
-                                <Form.Control onChange={ e => FormHelper.handle(e) } name="nombre" value={ me.state.permission.nombreEmpleado } placeholder="Nombre" />
+                                <Form.Control onChange={ e => FormHelper.handle(e) } name="nombreEmpleado" value={ me.state.permission.nombreEmpleado } placeholder="Nombre" />
                             </Form.Group>
                         </Col>
                         <Col sm="12" md="6">
                             <Form.Group className="mb-3">
                                 <Form.Label>Apellido</Form.Label>
-                                <Form.Control onChange={ e => FormHelper.handle(e) } name="apellido" value={ me.state.permission.apellidoEmpleado } placeholder="Apellido" />
+                                <Form.Control onChange={ e => FormHelper.handle(e) } name="apellidoEmpleado" value={ me.state.permission.apellidoEmpleado } placeholder="Apellido" />
                             </Form.Group>
                         </Col>
                         <Col sm="12" md="6">
