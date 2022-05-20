@@ -9,6 +9,7 @@ scripts/flow/*/.flowconfig
 _SpecRunner.html
 __benchmarks__
 obj/
+bin/
 build/
 build2/
 remote-repo/
