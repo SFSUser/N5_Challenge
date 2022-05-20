@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UY9cXfcSSCjCqOgHrjXiKbInPZMvK+zYKxhPmT4p8RzwHVPMKyz7IjrO1Lq7xUDSp8Z+GWNSZJyeMP+U3T7c3w==",
+  "dgSpecHash": "+ClPAf/NPhc5bY+pr+YAITTWzr/Gq6q3jznAAYyJTayAnoi5rWqEgrXpjsIHdTzM+j7xzGy7tRZbIPsm6lU6Ow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.API\\Security.API.csproj",
+  "projectFilePath": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_Challenge\\Services\\Security\\Security.API\\Security.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Emerson Fierro S\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Emerson Fierro S\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

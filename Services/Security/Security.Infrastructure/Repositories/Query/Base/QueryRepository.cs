@@ -6,10 +6,12 @@ namespace Security.Infrastructure.Repository.Query.Base
 {
     public class QueryRepository<T> : DbConnector,  IQueryRepository<T> where T : class
     {
-        public QueryRepository(IConfiguration configuration)
+        protected readonly SecurityContext _context;
+
+        public QueryRepository(IConfiguration configuration, SecurityContext context)
             : base(configuration)
         {
-
+            _context = context;
         }
     }
 }

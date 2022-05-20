@@ -9,7 +9,15 @@ namespace Security.Infrastructure.Data
         {
 
         }
+        
+        // Specify DbSet properties etc
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Permissions>()
+            .HasOne( e => e.PermissionType);
+        }
 
-        public DbSet<Permissions> Customers { get; set; }
+        public DbSet<Permissions> Permissions { get; set; }
+        public DbSet<PermissionsType> Customers { get; set; }
     }
 }

@@ -2973,11 +2973,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.API\\Security.API.csproj",
+      "projectUniqueName": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_Challenge\\Services\\Security\\Security.API\\Security.API.csproj",
       "projectName": "Security.API",
-      "projectPath": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.API\\Security.API.csproj",
+      "projectPath": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_Challenge\\Services\\Security\\Security.API\\Security.API.csproj",
       "packagesPath": "C:\\Users\\Emerson Fierro S\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.API\\obj\\",
+      "outputPath": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_Challenge\\Services\\Security\\Security.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Emerson Fierro S\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2994,14 +2994,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Application\\Security.Application.csproj": {
-              "projectPath": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Application\\Security.Application.csproj"
+            "C:\\Users\\Emerson Fierro S\\Desktop\\N5_Challenge\\Services\\Security\\Security.Application\\Security.Application.csproj": {
+              "projectPath": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_Challenge\\Services\\Security\\Security.Application\\Security.Application.csproj"
             },
-            "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Core\\Security.Core.csproj": {
-              "projectPath": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Core\\Security.Core.csproj"
+            "C:\\Users\\Emerson Fierro S\\Desktop\\N5_Challenge\\Services\\Security\\Security.Core\\Security.Core.csproj": {
+              "projectPath": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_Challenge\\Services\\Security\\Security.Core\\Security.Core.csproj"
             },
-            "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Infrastructure\\Security.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Infrastructure\\Security.Infrastructure.csproj"
+            "C:\\Users\\Emerson Fierro S\\Desktop\\N5_Challenge\\Services\\Security\\Security.Infrastructure\\Security.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_Challenge\\Services\\Security\\Security.Infrastructure\\Security.Infrastructure.csproj"
             }
           }
         }

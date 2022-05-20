@@ -8,13 +8,13 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Security.API
 build_property.RootNamespace = Security.API
-build_property.ProjectDir = C:\Users\Emerson Fierro S\Desktop\N5_challenge\Services\Security\Security.API\
+build_property.ProjectDir = C:\Users\Emerson Fierro S\Desktop\N5_Challenge\Services\Security\Security.API\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Emerson Fierro S\Desktop\N5_challenge\Services\Security\Security.API
+build_property.MSBuildProjectDirectory = C:\Users\Emerson Fierro S\Desktop\N5_Challenge\Services\Security\Security.API
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Emerson Fierro S/Desktop/N5_challenge/Services/Security/Security.API/Views/Home/Home.cshtml]
+[C:/Users/Emerson Fierro S/Desktop/N5_Challenge/Services/Security/Security.API/Views/Home/Home.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

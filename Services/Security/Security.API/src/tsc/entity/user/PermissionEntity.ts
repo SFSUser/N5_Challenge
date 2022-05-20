@@ -8,7 +8,7 @@ export default class Permission {
     public apellidoEmpleado: string = "";
     public tipoPermiso: number = 0;
     public fechaPermiso: string = "";
-    public tipoPermisoElement: PermissionType;
+    public permissionType: PermissionType;
 }
 
 export class PermissionType {

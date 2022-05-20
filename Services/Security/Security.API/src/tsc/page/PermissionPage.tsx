@@ -81,7 +81,7 @@ export default class PermissionPage extends Component<PermissionPageProp, Permis
                                             <td>{ u.nombreEmpleado}</td>
                                             <td>{ u.apellidoEmpleado }</td>
                                             <td>{ u.fechaPermiso }</td>
-                                            <td>{ u.tipoPermiso }</td>
+                                            <td>{ u.permissionType.descripcion }</td>
                                             <td>
                                                 <Button onClick={ e => me.selectPermission(u) } size="sm" color="primary">
                                                     <I.Edit size="15"/> Editar

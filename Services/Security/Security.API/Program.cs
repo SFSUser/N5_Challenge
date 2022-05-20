@@ -32,11 +32,12 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<SecurityContext>( options => options.UseSqlServer(connectionString));
 
 // Register dependencies
-builder.Services.AddMediatR(typeof(CreateCustomerHandler).GetTypeInfo().Assembly);
+//builder.Services.AddMediatR(typeof(CreateCustomerHandler).GetTypeInfo().Assembly);
+builder.Services.AddMediatR(typeof(ModifyPermissionHandler).GetTypeInfo().Assembly);
 builder.Services.AddScoped(typeof(IQueryRepository<>), typeof(QueryRepository<>));
-builder.Services.AddTransient<ICustomerQueryRepository, CustomerQueryRepository>();
+//builder.Services.AddTransient<ICustomerQueryRepository, CustomerQueryRepository>();
 builder.Services.AddScoped(typeof(ICommandRepository<>), typeof(CommandRepository<>));
-builder.Services.AddTransient<ICustomerCommandRepository, CustomerCommandRepository>();
+//builder.Services.AddTransient<ICustomerCommandRepository, CustomerCommandRepository>();
 
 builder.Services.AddTransient<IPermissionsQueryRepository, PermissionsQueryRepository>();
 builder.Services.AddTransient<IPermissionsCommandRepository, PermissionsCommandRepository>();

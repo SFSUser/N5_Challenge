@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Core\\Security.Core.csproj": {}
+    "C:\\Users\\Emerson Fierro S\\Desktop\\N5_Challenge\\Services\\Security\\Security.Core\\Security.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Core\\Security.Core.csproj": {
+    "C:\\Users\\Emerson Fierro S\\Desktop\\N5_Challenge\\Services\\Security\\Security.Core\\Security.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Core\\Security.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_Challenge\\Services\\Security\\Security.Core\\Security.Core.csproj",
         "projectName": "Security.Core",
-        "projectPath": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Core\\Security.Core.csproj",
+        "projectPath": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_Challenge\\Services\\Security\\Security.Core\\Security.Core.csproj",
         "packagesPath": "C:\\Users\\Emerson Fierro S\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_challenge\\Services\\Security\\Security.Core\\obj\\",
+        "outputPath": "C:\\Users\\Emerson Fierro S\\Desktop\\N5_Challenge\\Services\\Security\\Security.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Emerson Fierro S\\AppData\\Roaming\\NuGet\\NuGet.Config",

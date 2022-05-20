@@ -1,4 +1,5 @@
 using System;
+using Security.Core.Entities;
 
 namespace Security.Application.Response
 {
@@ -9,5 +10,6 @@ namespace Security.Application.Response
         public string ApellidoEmpleado { get; set; }
         public int TipoPermiso { get; set; }
         public DateTime FechaPermiso { get; set; }
+        public PermissionsType PermissionsType { get; set; }
     }
 }
