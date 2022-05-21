@@ -46,7 +46,7 @@ namespace Security.Test.Handlers
         }
 
         [Fact]
-        public async Task Valid_LeaveType_Added()
+        public async Task ModifyPermission()
         {
             var result = await _handler.Handle(new ModifyPermissionCommand() { 
                 

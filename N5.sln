@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Security.Core", "Services\S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Security.Infrastructure", "Services\Security\Security.Infrastructure\Security.Infrastructure.csproj", "{D0D6126F-42E3-4660-92A6-8576F51DCA74}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Security.Test", "Services\Security\Test\Security.Test.csproj", "{601529C8-4434-4B4F-B911-323128F5DA68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Security.Test", "Services\Security\Security.Test\Security.Test.csproj", "{601529C8-4434-4B4F-B911-323128F5DA68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
