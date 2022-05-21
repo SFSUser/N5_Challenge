@@ -7,6 +7,9 @@ using Security.Core.Entities.Base;
 
 namespace Security.Core.Entities
 {
+    /// <summary>
+    /// PermissionsType entity
+    /// </summary>
     [Table("TipoPermisos")]
     public class PermissionsType: BaseEntity
     {

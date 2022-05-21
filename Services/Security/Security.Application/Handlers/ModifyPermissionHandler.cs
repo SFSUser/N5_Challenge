@@ -12,6 +12,9 @@ using System.Threading.Tasks;
 
 namespace Security.Application.Handlers.CommandHandler
 {
+    /// <summary>
+    /// ModifyPermissionHandler class
+    /// </summary>
     public class ModifyPermissionHandler : IRequestHandler<ModifyPermissionCommand, PermissionResponse>
     {
         private readonly IPermissionsQueryRepository _repoQuery;

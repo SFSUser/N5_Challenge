@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Security.Core.Repositories.Query
 {
+    /// <summary>
+    /// PermissionsQueryRepository interface
+    /// </summary>
     public interface IPermissionsQueryRepository : IQueryRepository<Permissions>
     {
         Task<IReadOnlyList<Permissions>> GetPermissionsAsync();

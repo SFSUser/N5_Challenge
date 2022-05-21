@@ -4,6 +4,9 @@ using System;
 
 namespace Security.Application.Queries
 {
+    /// <summary>
+    /// GetPermissionQuery class
+    /// </summary>
 
     public class GetPermissionQuery: IRequest<Permissions>
     {

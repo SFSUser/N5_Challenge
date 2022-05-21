@@ -3,6 +3,9 @@ using System;
 
 namespace Security.Application.Mapper
 {
+    /// <summary>
+    /// Profile class for mapping commands to entities
+    /// </summary>
     public class PermissionsMapper
     {
         private static readonly Lazy<IMapper> Lazy = new Lazy<IMapper>(()=>

@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace Security.Infrastructure.Repository.Command.Base
 {
+    /// <summary>
+    /// CommandRepository base generic class
+    /// </summary>
     public class CommandRepository<T> : ICommandRepository<T> where T : class
     {
         protected readonly SecurityContext _context;

@@ -4,6 +4,9 @@ using System;
 
 namespace Security.Application.Commands
 {
+    /// <summary>
+    /// ModifyPermissionCommand class
+    /// </summary>
     public class ModifyPermissionCommand : IRequest<PermissionResponse>
     {
         public Int64 Id { get; set; }

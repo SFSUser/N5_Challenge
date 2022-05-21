@@ -4,6 +4,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Security.Core.Entities.Base
 {
+    /// <summary>
+    /// Common base entity
+    /// </summary>
     public class BaseEntity
     {
         [Key]

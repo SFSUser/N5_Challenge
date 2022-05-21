@@ -5,6 +5,9 @@ using System.Data.SqlClient;
 
 namespace Security.Infrastructure.Data
 {
+    /// <summary>
+    /// Database connector class
+    /// </summary>
     public class DbConnector
     {
         private readonly IConfiguration _configuration;
@@ -14,13 +17,11 @@ namespace Security.Infrastructure.Data
             _configuration = configuration;
         }
 
+        /// <summary>
+        /// Create connection instance
+        /// </summary>
         public IDbConnection CreateConnection()
         {
-            //return new SqliteConnection(_connectionString);
-            /// <summary>
-            /// "Server=TPCCP-DB04\\SCBACK;Database=tpStandardsRegional;Trusted_Connection=True;"
-            /// </summary>
-            /// <returns></returns>
             string _connectionString = _configuration.GetConnectionString("DefaultConnection");
             return new SqlConnection(_connectionString);
         }

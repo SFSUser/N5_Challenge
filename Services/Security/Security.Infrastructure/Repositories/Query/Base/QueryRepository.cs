@@ -4,6 +4,9 @@ using Security.Infrastructure.Data;
 
 namespace Security.Infrastructure.Repository.Query.Base
 {
+    /// <summary>
+    /// QueryRepository base class
+    /// </summary>
     public class QueryRepository<T> : DbConnector,  IQueryRepository<T> where T : class
     {
         protected readonly SecurityContext _context;

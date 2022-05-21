@@ -13,6 +13,9 @@ using Microsoft.Extensions.Configuration;
 
 namespace HR.LeaveManagement.Persistence.Repositories
 {
+    /// <summary>
+    /// UnitOfWork class
+    /// </summary>
     public class UnitOfWork : IUnitOfWork
     {
 
@@ -28,9 +31,16 @@ namespace HR.LeaveManagement.Persistence.Repositories
             _configuration = configuration;
         }
 
+        /// <summary>
+        /// Get permission query repository
+        /// </summary>
         public IPermissionsQueryRepository PermissionsQueryRepository => 
             _permissionQueryRepository ??= new PermissionsQueryRepository(_configuration, _context);
 
+        /// <summary>
+        /// Get permission command repository
+        /// </summary>
+        /// <returns></returns>
         public IPermissionsCommandRepository PermissionsCommandRepository => 
             _permissionCommandRepository ??= new PermissionsCommandRepository(_context);
 

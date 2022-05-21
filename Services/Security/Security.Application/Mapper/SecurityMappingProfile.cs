@@ -5,6 +5,9 @@ using Security.Core.Entities;
 
 namespace Security.Application.Mapper
 {
+    /// <summary>
+    /// Mapper class for mapping commands to entities
+    /// </summary>
     public class SecurityMappingProfile : Profile
     {
         public SecurityMappingProfile()

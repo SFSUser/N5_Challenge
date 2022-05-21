@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace Security.Application.Handlers.QueryHandlers
 {
+    /// <summary>
+    /// GetPermissionHandler class
+    /// </summary>
     public class GetPermissionHandler : IRequestHandler<GetPermissionQuery, Permissions>
     {
         private readonly IUnitOfWork _unitOfWork;
