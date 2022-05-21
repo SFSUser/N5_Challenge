@@ -1,10 +1,9 @@
 import axios, { AxiosRequestConfig, Method } from 'axios';
 import { HttpResponse } from '../entity/common/CommonEntity';
-import SRouter from './SRouter';
 
 export default class Request {
     public static async execute(route: string, method: Method, data: any = {}): Promise<HttpResponse> {
-        let path = route;//SRouter.get(route);
+        let path = route;
         var response = new HttpResponse();
         var result: any = null;
         try {
@@ -19,12 +18,6 @@ export default class Request {
             });
             response.data = result.data;
         } catch {}
-
-        if(result == null) {
-            //alert("resultado nulo!");
-            //UserBL.logout();
-            //location.reload();
-        }
 
         response.result = result?.status == 200;
         return response;
@@ -52,8 +45,6 @@ export default class Request {
 
     public static async post(route: string, data: any): Promise<HttpResponse> {
         let me = this;
-        //let formData = Reflection.toFormData(data);
-        //let result = await axios.post(path, formData);let path = SRouter.get(route);
         return me.execute(route, "post", data);
     }
 

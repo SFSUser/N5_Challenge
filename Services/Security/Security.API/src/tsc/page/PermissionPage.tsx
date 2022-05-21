@@ -6,9 +6,10 @@ import PermissionBL from '../BL/PermissionBL';
 import Permission from '../entity/user/PermissionEntity';
 import { Center } from '../component/utils/Fragment';
 import FormHelper from '../helper/FormHelper';
-import PermissionForm from '../component/user/PermissionForm';
+import PermissionForm from '../component/permission/PermissionForm';
 import Alert from '../component/utils/Alert';
 import * as I from 'react-feather';
+import moment from 'moment';
 
 export default class PermissionPage extends Component<PermissionPageProp, PermissionPageState> {
 
@@ -37,8 +38,9 @@ export default class PermissionPage extends Component<PermissionPageProp, Permis
         });
     }
 
-    private selectPermission(permission: Permission|null) {
+    private async selectPermission(permission: Permission|null) {
         let me = this;
+        permission = permission?.id > 0 ? await (await PermissionBL.getPermission(permission.id)).getElement(Permission) : permission;
         me.setState({
             permission
         });
@@ -56,9 +58,9 @@ export default class PermissionPage extends Component<PermissionPageProp, Permis
             <div className="fixer pt-2">
                 <Card>
                     <Card.Header>
-                        <Button className="float-right" onClick={ e => me.selectPermission(new Permission()) } variant="success">
+                        {/*<Button className="float-right" onClick={ e => me.selectPermission(new Permission()) } variant="success">
                             <I.Plus/> Crear nuevo
-                        </Button>
+                        </Button>*/}
                         Usuarios registrados
                     </Card.Header>
                     <Card.Body>
@@ -80,7 +82,7 @@ export default class PermissionPage extends Component<PermissionPageProp, Permis
                                             <td>{ u.id}</td>
                                             <td>{ u.nombreEmpleado}</td>
                                             <td>{ u.apellidoEmpleado }</td>
-                                            <td>{ u.fechaPermiso }</td>
+                                            <td>{ moment(u.fechaPermiso).format("Y/MM/DD HH:mm:ss") }</td>
                                             <td>{ u.permissionType.descripcion }</td>
                                             <td>
                                                 <Button onClick={ e => me.selectPermission(u) } size="sm" color="primary">

@@ -8,7 +8,6 @@ import BasePageState from '../entity/page/states/BasePageState';
 import { LAYOUT } from '../constant/layout';
 import Helmet from 'react-helmet';
 import { Layout } from '../entity/common/CommonEntity';
-import GaPage from '../component/utils/GaPage';
 import 'animate.css';
 
 export default class BasePage extends Component<BasePageProp, BasePageState> {  
@@ -31,9 +30,7 @@ export default class BasePage extends Component<BasePageProp, BasePageState> {
                     {LAYOUT.map( (l: Layout, i: number) => {
                         return (
                             <Route key={ i } exact path={l.path}>
-                                <GaPage>
-                                    <l.component/>
-                                </GaPage>
+                                <l.component/>
                             </Route>
                         );
                     })}
