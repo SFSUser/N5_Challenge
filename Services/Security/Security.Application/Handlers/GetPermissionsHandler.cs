@@ -11,15 +11,21 @@ namespace Security.Application.Handlers.QueryHandlers
 {
     public class GetPermissionsHandler : IRequestHandler<GetPermissionsQuery, List<Permissions>>
     {
-        private readonly IUnitOfWork _unitOfWork;
+        private readonly IPermissionsQueryRepository _repo;
 
-        public GetPermissionsHandler(IUnitOfWork unitOfWork)
+        /*public GetPermissionsHandler(IUnitOfWork unitOfWork)
         {
-            _unitOfWork = unitOfWork;
+            _repo = unitOfWork.PermissionsQueryRepository;
+        }*/
+
+        public GetPermissionsHandler(IPermissionsQueryRepository unitOfWork)
+        {
+            _repo = unitOfWork;
         }
+
         public async Task<List<Permissions>> Handle(GetPermissionsQuery request, CancellationToken cancellationToken)
         {
-            return (List<Permissions>)await _unitOfWork.PermissionsQueryRepository.GetPermissionsAsync();
+            return (List<Permissions>)await _repo.GetPermissionsAsync();
         }
     }
 }

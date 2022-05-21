@@ -14,11 +14,23 @@ namespace Security.Application.Handlers.CommandHandler
 {
     public class ModifyPermissionHandler : IRequestHandler<ModifyPermissionCommand, PermissionResponse>
     {
+        private readonly IPermissionsQueryRepository _repoQuery;
+        private readonly IPermissionsCommandRepository _repoCommand;
         private readonly IUnitOfWork _unitOfWork;
-        public ModifyPermissionHandler(IUnitOfWork unitOfWork)
+
+        /*public ModifyPermissionHandler(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
+            _repoQuery = _unitOfWork.PermissionsQueryRepository;
+            _repoCommand = _unitOfWork.PermissionsCommandRepository;
+        }*/
+        
+        public ModifyPermissionHandler(IPermissionsCommandRepository repoCommand, IPermissionsQueryRepository repoQuery)
+        {
+            _repoQuery = repoQuery;
+            _repoCommand = repoCommand;
         }
+
         public async Task<PermissionResponse> Handle(ModifyPermissionCommand request, CancellationToken cancellationToken)
         {
             var PermissionsEntity = PermissionsMapper.Mapper.Map<Permissions>(request);
@@ -30,14 +42,14 @@ namespace Security.Application.Handlers.CommandHandler
 
             try
             {
-                await _unitOfWork.PermissionsCommandRepository.UpdateAsync(PermissionsEntity);
+                await _repoCommand.UpdateAsync(PermissionsEntity);
             }
             catch (Exception exp)
             {
                 throw new ApplicationException(exp.Message);
             }
 
-            var modifiedPermissions = await _unitOfWork.PermissionsQueryRepository.GetPermissionAsync(request.Id);
+            var modifiedPermissions = await _repoQuery.GetPermissionAsync(request.Id);
             var PermissionsResponse = PermissionsMapper.Mapper.Map<PermissionResponse>(modifiedPermissions);
 
             return PermissionsResponse;
