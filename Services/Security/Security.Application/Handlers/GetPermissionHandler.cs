@@ -11,17 +11,13 @@ namespace Security.Application.Handlers.QueryHandlers
 {
     public class GetPermissionHandler : IRequestHandler<GetPermissionQuery, Permissions>
     {
-        private readonly IUnitOfWork _mediator;
+        private readonly IUnitOfWork _unitOfWork;
         private readonly IPermissionsQueryRepository _repoQuery;
 
-        /*public GetPermissionHandler(IUnitOfWork mediator)
+        public GetPermissionHandler(IUnitOfWork unitOfWork)
         {
-            _mediator = mediator;
-        }*/
-
-        public GetPermissionHandler(IPermissionsQueryRepository mediator)
-        {
-            _repoQuery = mediator;
+            _unitOfWork = unitOfWork;
+            _repoQuery = unitOfWork?.PermissionsQueryRepository;
         }
 
         public async Task<Permissions> Handle(GetPermissionQuery request, CancellationToken cancellationToken)

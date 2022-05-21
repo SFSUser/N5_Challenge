@@ -35,7 +35,7 @@ namespace Security.Test.Handlers
             });
 
             _mapper = mapperConfig.CreateMapper();
-            _handler = new ModifyPermissionHandler(_mockUow.Object.PermissionsCommandRepository, _mockUow.Object.PermissionsQueryRepository);
+            _handler = new ModifyPermissionHandler(_mockUow.Object);
 
             _leaveTypeDto = new Permissions
             {

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Moq;
+using Security.Application.Contracts.Persistence;
 using Security.Application.Handlers.CommandHandler;
 using Security.Application.Handlers.QueryHandlers;
 using Security.Application.Mapper;
@@ -21,10 +22,11 @@ namespace Security.Test.Handlers
     public class GetPermissionsHandlerTests
     {
         private readonly IMapper _mapper;
-        private readonly Mock<IPermissionsQueryRepository> _mockRepo;
+        private readonly Mock<IUnitOfWork> _mockUow;
+
         public GetPermissionsHandlerTests()
         {
-            _mockRepo = MockPermissionsRepository.PermissionsQueryRepository();
+            _mockUow = MockUnitOfWork.GetUnitOfWork();
 
             var mapperConfig = new MapperConfiguration(c => 
             {
@@ -37,7 +39,7 @@ namespace Security.Test.Handlers
         [Fact]
         public async Task GetPermissions()
         {
-            var handler = new GetPermissionsHandler(_mockRepo.Object);
+            var handler = new GetPermissionsHandler(_mockUow.Object);
 
             var result = await handler.Handle(new GetPermissionsQuery(), CancellationToken.None);
 

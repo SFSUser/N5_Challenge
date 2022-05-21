@@ -18,19 +18,13 @@ namespace Security.Application.Handlers.CommandHandler
         private readonly IPermissionsCommandRepository _repoCommand;
         private readonly IUnitOfWork _unitOfWork;
 
-        /*public ModifyPermissionHandler(IUnitOfWork unitOfWork)
+        public ModifyPermissionHandler(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
             _repoQuery = _unitOfWork.PermissionsQueryRepository;
             _repoCommand = _unitOfWork.PermissionsCommandRepository;
-        }*/
-        
-        public ModifyPermissionHandler(IPermissionsCommandRepository repoCommand, IPermissionsQueryRepository repoQuery)
-        {
-            _repoQuery = repoQuery;
-            _repoCommand = repoCommand;
         }
-
+        
         public async Task<PermissionResponse> Handle(ModifyPermissionCommand request, CancellationToken cancellationToken)
         {
             var PermissionsEntity = PermissionsMapper.Mapper.Map<Permissions>(request);
