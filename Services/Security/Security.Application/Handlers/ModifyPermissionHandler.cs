@@ -1,5 +1,6 @@
 using MediatR;
 using Security.Application.Commands;
+using Security.Application.Contracts.Persistence;
 using Security.Application.Mapper;
 using Security.Application.Response;
 using Security.Core.Entities;
@@ -13,12 +14,10 @@ namespace Security.Application.Handlers.CommandHandler
 {
     public class ModifyPermissionHandler : IRequestHandler<ModifyPermissionCommand, PermissionResponse>
     {
-        private readonly IPermissionsCommandRepository _PermissionsCommandRepository;
-        private readonly IPermissionsQueryRepository _PermissionsQueryRepository;
-        public ModifyPermissionHandler(IPermissionsCommandRepository PermissionsRepository, IPermissionsQueryRepository PermissionsQueryRepository)
+        private readonly IUnitOfWork _unitOfWork;
+        public ModifyPermissionHandler(IUnitOfWork unitOfWork)
         {
-            _PermissionsCommandRepository = PermissionsRepository;
-            _PermissionsQueryRepository = PermissionsQueryRepository;
+            _unitOfWork = unitOfWork;
         }
         public async Task<PermissionResponse> Handle(ModifyPermissionCommand request, CancellationToken cancellationToken)
         {
@@ -31,14 +30,14 @@ namespace Security.Application.Handlers.CommandHandler
 
             try
             {
-                await _PermissionsCommandRepository.UpdateAsync(PermissionsEntity);
+                await _unitOfWork.PermissionsCommandRepository.UpdateAsync(PermissionsEntity);
             }
             catch (Exception exp)
             {
                 throw new ApplicationException(exp.Message);
             }
 
-            var modifiedPermissions = await _PermissionsQueryRepository.GetPermissionAsync(request.Id);
+            var modifiedPermissions = await _unitOfWork.PermissionsQueryRepository.GetPermissionAsync(request.Id);
             var PermissionsResponse = PermissionsMapper.Mapper.Map<PermissionResponse>(modifiedPermissions);
 
             return PermissionsResponse;

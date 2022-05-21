@@ -1,4 +1,5 @@
 using MediatR;
+using Security.Application.Contracts.Persistence;
 using Security.Application.Queries;
 using Security.Core.Entities;
 using Security.Core.Repositories.Query;
@@ -10,15 +11,15 @@ namespace Security.Application.Handlers.QueryHandlers
 {
     public class GetPermissionsHandler : IRequestHandler<GetPermissionsQuery, List<Permissions>>
     {
-        private readonly IPermissionsQueryRepository _PermissionsQueryRepository;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public GetPermissionsHandler(IPermissionsQueryRepository PermissionsQueryRepository)
+        public GetPermissionsHandler(IUnitOfWork unitOfWork)
         {
-            _PermissionsQueryRepository = PermissionsQueryRepository;
+            _unitOfWork = unitOfWork;
         }
         public async Task<List<Permissions>> Handle(GetPermissionsQuery request, CancellationToken cancellationToken)
         {
-            return (List<Permissions>)await _PermissionsQueryRepository.GetPermissionsAsync();
+            return (List<Permissions>)await _unitOfWork.PermissionsQueryRepository.GetPermissionsAsync();
         }
     }
 }

@@ -9,12 +9,5 @@ namespace Security.Core.Entities.Base
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Int32 Id { get; set; }
-        //public DateTime CreatedDate { get; set; }
-        //public DateTime ModifiedDate { get; private set; }
-
-        public BaseEntity()
-        {
-            //this.ModifiedDate = DateTime.Now;
-        }
     }
 }

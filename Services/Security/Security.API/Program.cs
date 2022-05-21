@@ -15,6 +15,8 @@ using Microsoft.OpenApi.Models;
 using Security.Core.Repositories.Command;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
+using Security.Application.Contracts.Persistence;
+using HR.LeaveManagement.Persistence.Repositories;
 //using Microsoft.Extensions.DependencyInjection.Abstractions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -39,6 +41,7 @@ builder.Services.AddScoped(typeof(IQueryRepository<>), typeof(QueryRepository<>)
 builder.Services.AddScoped(typeof(ICommandRepository<>), typeof(CommandRepository<>));
 //builder.Services.AddTransient<ICustomerCommandRepository, CustomerCommandRepository>();
 
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddTransient<IPermissionsQueryRepository, PermissionsQueryRepository>();
 builder.Services.AddTransient<IPermissionsCommandRepository, PermissionsCommandRepository>();
 /**/
