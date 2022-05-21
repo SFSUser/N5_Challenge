@@ -1,11 +1,11 @@
 using System;
 using Security.Core.Entities;
 
-namespace Security.Application.Response
+namespace Security.Application.DTO.Response
 {
     public class PermissionResponse
     {
-        public Int64 Id { get; set; }
+        public long Id { get; set; }
         public string NombreEmpleado { get; set; }
         public string ApellidoEmpleado { get; set; }
         public int TipoPermiso { get; set; }

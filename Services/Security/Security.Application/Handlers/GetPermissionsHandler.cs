@@ -1,6 +1,6 @@
 using MediatR;
 using Security.Application.Contracts.Persistence;
-using Security.Application.Queries;
+using Security.Application.CQRS.Queries;
 using Security.Core.Entities;
 using Security.Core.Repositories.Query;
 using System.Collections.Generic;
@@ -9,9 +9,6 @@ using System.Threading.Tasks;
 
 namespace Security.Application.Handlers.QueryHandlers
 {
-    /// <summary>
-    /// GetPermissionHandler class
-    /// </summary>
     public class GetPermissionsHandler : IRequestHandler<GetPermissionsQuery, List<Permissions>>
     {
         private readonly IUnitOfWork _unitOfWork;

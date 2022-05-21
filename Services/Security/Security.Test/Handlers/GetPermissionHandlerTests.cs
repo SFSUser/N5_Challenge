@@ -4,7 +4,7 @@ using Security.Application.Contracts.Persistence;
 using Security.Application.Handlers.CommandHandler;
 using Security.Application.Handlers.QueryHandlers;
 using Security.Application.Mapper;
-using Security.Application.Queries;
+using Security.Application.CQRS.Queries;
 using Security.Core.Entities;
 using Security.Core.Repositories.Query;
 using Security.Test.Mocks;

@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
 using Moq;
-using Security.Application.Commands;
+using Security.Application.CQRS.Commands;
 using Security.Application.Contracts.Persistence;
+using Security.Application.DTO.Response;
 using Security.Application.Handlers.CommandHandler;
 using Security.Application.Mapper;
-using Security.Application.Response;
 using Security.Core.Entities;
 using Security.Test.Mocks;
 using Shouldly;
@@ -46,7 +46,7 @@ namespace Security.Test.Handlers
         }
 
         [Fact]
-        public async Task ModifyPermission()
+        public async Task Valid_LeaveType_Added()
         {
             var result = await _handler.Handle(new ModifyPermissionCommand() { 
                 

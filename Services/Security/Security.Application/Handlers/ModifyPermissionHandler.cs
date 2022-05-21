@@ -1,8 +1,8 @@
 using MediatR;
-using Security.Application.Commands;
 using Security.Application.Contracts.Persistence;
+using Security.Application.CQRS.Commands;
+using Security.Application.DTO.Response;
 using Security.Application.Mapper;
-using Security.Application.Response;
 using Security.Core.Entities;
 using Security.Core.Repositories.Command;
 using Security.Core.Repositories.Query;
@@ -12,9 +12,6 @@ using System.Threading.Tasks;
 
 namespace Security.Application.Handlers.CommandHandler
 {
-    /// <summary>
-    /// ModifyPermissionHandler class
-    /// </summary>
     public class ModifyPermissionHandler : IRequestHandler<ModifyPermissionCommand, PermissionResponse>
     {
         private readonly IPermissionsQueryRepository _repoQuery;

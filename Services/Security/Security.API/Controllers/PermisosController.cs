@@ -1,9 +1,9 @@
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Security.Application.Commands;
-using Security.Application.Queries;
-using Security.Application.Response;
+using Security.Application.CQRS.Commands;
+using Security.Application.CQRS.Queries;
+using Security.Application.DTO.Response;
 using Security.Core.Entities;
 using System;
 using System.Collections.Generic;
