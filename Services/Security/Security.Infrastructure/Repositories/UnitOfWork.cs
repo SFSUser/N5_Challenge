@@ -18,16 +18,14 @@ namespace HR.LeaveManagement.Persistence.Repositories
 
         private readonly SecurityContext _context;
         private readonly IConfiguration _configuration;
-        //private readonly IHttpContextAccessor _httpContextAccessor;
         private IPermissionsQueryRepository _permissionQueryRepository;
         private IPermissionsCommandRepository _permissionCommandRepository;
 
 
-        public UnitOfWork(SecurityContext context, IConfiguration configuration/*, IHttpContextAccessor httpContextAccessor*/)
+        public UnitOfWork(SecurityContext context, IConfiguration configuration)
         {
             _context = context;
             _configuration = configuration;
-            //this._httpContextAccessor = httpContextAccessor;
         }
 
         public IPermissionsQueryRepository PermissionsQueryRepository => 
@@ -44,7 +42,6 @@ namespace HR.LeaveManagement.Persistence.Repositories
 
         public async Task Save() 
         {
-            //var username = _httpContextAccessor.HttpContext.User.FindFirst(CustomClaimTypes.Uid)?.Value;
             await _context.SaveChangesAsync();
         }
     }
