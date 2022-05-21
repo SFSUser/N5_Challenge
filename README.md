@@ -2,6 +2,9 @@
 
 Para compilar webpack y el frontend (react). Asegurarse de tener instalado node.js en su equpo.
 
+1. Ubicarse en la ruta base de ...\Security\Security.API
+2. Ejecutar los siguientes comandos:
+
 ```
 npm run i
 npm run build
