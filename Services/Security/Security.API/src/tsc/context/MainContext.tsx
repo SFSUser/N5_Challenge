@@ -10,6 +10,9 @@ export let Content = {
 
 export const MainContext = createContext(Content.values);
 
+/**
+ * MainContextProvider component
+ */
 export const MainContextProvider: FC<any> = ({children}) => {
     let [session, setSession ] = useState(null);
 

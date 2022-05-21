@@ -3,6 +3,11 @@ import LoaderBackdropProp from "../../entity/utils/props/LoaderBackdropProp";
 import loader from '../../../img/loaders/loader_1.gif';
 import * as I from 'react-feather';
 
+/**
+ * Error component
+ * @class Error
+ * @author Samael Fierro <sfstricks@hotmail.com>
+ */
 export default class Error extends Component<LoaderBackdropProp> {
     render() {
         let me = this;

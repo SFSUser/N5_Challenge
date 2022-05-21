@@ -2,6 +2,9 @@ import { Layout } from "../entity/common/CommonEntity";
 import * as I from 'react-feather';
 import PermissionPage from "../page/PermissionPage";
 
+/**
+ * Menu items
+ */
 const layout: any = {
     LOGIN: new Layout({
         login: false,

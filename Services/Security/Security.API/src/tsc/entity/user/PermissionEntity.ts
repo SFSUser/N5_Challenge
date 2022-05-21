@@ -1,3 +1,8 @@
+/**
+ * Permission entity
+ * @class Permission
+ * @author Samael Fierro <sfstricks@hotmail.com>
+ */
 export default class Permission {
     constructor(){
         let me = this;
@@ -11,6 +16,11 @@ export default class Permission {
     public permissionType: PermissionType;
 }
 
+/**
+ * Permission type
+ * @class PermissionType
+ * @author Samael Fierro <sfstricks@hotmail.com>
+ */
 export class PermissionType {
     public id: number = 0;
     public descripcion: Date;

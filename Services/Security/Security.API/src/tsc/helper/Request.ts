@@ -1,6 +1,11 @@
 import axios, { AxiosRequestConfig, Method } from 'axios';
 import { HttpResponse } from '../entity/common/CommonEntity';
 
+/**
+ * Generic class, manages the connection to the API
+ * @class Request
+ * @author Samael Fierro <sfstricks@hotmail.com>
+ */
 export default class Request {
     public static async execute(route: string, method: Method, data: any = {}): Promise<HttpResponse> {
         let path = route;

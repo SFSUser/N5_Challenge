@@ -10,6 +10,11 @@ import Helmet from 'react-helmet';
 import { Layout } from '../entity/common/CommonEntity';
 import 'animate.css';
 
+/**
+ * BasePage component (Common for all pages components)
+ * @class BasePage
+ * @author Samael Fierro <sfstricks@hotmail.com>
+ */
 export default class BasePage extends Component<BasePageProp, BasePageState> {  
     static contextType = MainContext;
 

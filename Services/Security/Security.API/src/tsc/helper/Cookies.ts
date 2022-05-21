@@ -1,3 +1,8 @@
+/**
+ * Cookies helper
+ * @class Cookies
+ * @author Samael Fierro <sfstricks@hotmail.com>
+ */
 export default class Cookies {
 
     public static set(key: string, value: string, exdays: number = 999) {

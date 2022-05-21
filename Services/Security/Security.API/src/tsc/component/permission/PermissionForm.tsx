@@ -10,6 +10,11 @@ import Alert, { Swal } from "../utils/Alert";
 import * as I from 'react-feather';
 import PermissionBL from "../../BL/PermissionBL";
 
+/**
+ * Edit Permission form
+ * @class PermissionForm
+ * @author Samael Fierro <sfstricks@hotmail.com>
+ */
 export default class PermissionForm extends Component<PermissionFormProp, PermissionFormState> {
 
     public constructor(props) {
@@ -24,6 +29,10 @@ export default class PermissionForm extends Component<PermissionFormProp, Permis
         });
     }
 
+    /**
+     * Handle submit
+     * @param e event
+     */
     private async handleSubmit(e: any) {
         e.preventDefault();
         let me = this;
@@ -33,6 +42,9 @@ export default class PermissionForm extends Component<PermissionFormProp, Permis
         }
     }
 
+    /**
+     * Save permission
+     */
     private async save() {
         let me = this;
         var user: Permission = me.state.permission;
@@ -40,6 +52,9 @@ export default class PermissionForm extends Component<PermissionFormProp, Permis
         Swal.result({result: result});
     }
 
+    /**
+     * Close form
+     */
     private close(){
         let me = this;
         me.props.onClose && me.props.onClose();
@@ -86,9 +101,6 @@ export default class PermissionForm extends Component<PermissionFormProp, Permis
                         </Button>
                     </Center>
                 </Form>
-                {/*me.state.permission.id > 0 &&
-                    <UserPermission user={me.state.permission} />
-                */}
             </>
         );
     }

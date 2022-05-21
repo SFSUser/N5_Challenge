@@ -1,3 +1,8 @@
+/**
+ * TextHelper
+ * @class TextHelper
+ * @author Samael Fierro <sfstricks@hotmail.com>
+ */
 export default class TextHelper {
     public static trimText(text: string, size: number = 100){
         var element = document.createElement("div");

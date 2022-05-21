@@ -1,3 +1,8 @@
+/**
+ * Map objecto to types
+ * @class Reflection
+ * @author Samael Fierro <sfstricks@hotmail.com>
+ */
 export default class Reflection {
     public static parseEntity(data: any, entity: any, callback: CallableFunction = () => {}) {
         let element = new entity();

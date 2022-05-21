@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
-import { Button, Card, Form, Row, Col, Table, FormGroup, InputGroup, FormControl } from 'react-bootstrap';
+import { Button, Card, Table } from 'react-bootstrap';
 import PermissionPageProp from '../entity/page/props/PermissionPageProp';
 import PermissionPageState from '../entity/page/states/PermissionPageState';
 import PermissionBL from '../BL/PermissionBL';
 import Permission from '../entity/user/PermissionEntity';
-import { Center } from '../component/utils/Fragment';
-import FormHelper from '../helper/FormHelper';
 import PermissionForm from '../component/permission/PermissionForm';
-import Alert from '../component/utils/Alert';
 import * as I from 'react-feather';
 import moment from 'moment';
 
+/**
+ * Permission page (list of permissions)
+ * @class PermissionPage
+ * @author Samael Fierro <sfstricks@hotmail.com>
+ */
 export default class PermissionPage extends Component<PermissionPageProp, PermissionPageState> {
 
     public constructor(props: PermissionPageProp){
@@ -28,6 +30,9 @@ export default class PermissionPage extends Component<PermissionPageProp, Permis
         me.listPermissions();
     }
 
+    /**
+     * List permissions
+     */
     private async listPermissions(){
         let me = this;
         me.setState({busy: true});
@@ -38,6 +43,10 @@ export default class PermissionPage extends Component<PermissionPageProp, Permis
         });
     }
 
+    /**
+     * Select permission
+     * @param permission 
+     */
     private async selectPermission(permission: Permission|null) {
         let me = this;
         permission = permission?.id > 0 ? await (await PermissionBL.getPermission(permission.id)).getElement(Permission) : permission;
@@ -46,6 +55,9 @@ export default class PermissionPage extends Component<PermissionPageProp, Permis
         });
     }   
 
+    /**
+     * Handle close event from permission form
+     */
     private handleClose(){
         let me = this;
         me.selectPermission(null);

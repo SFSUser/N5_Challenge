@@ -2,6 +2,11 @@ import { Icon } from "react-feather";
 import TextHelper from "../../helper/TextHelper";
 import Reflection from "../../helper/Reflection";
 
+/**
+ * Http response common utilities
+ * @class HttpResponse
+ * @author Samael Fierro <sfstricks@hotmail.com>
+ */
 export class HttpResponse {
     public result: boolean = false;
     public message: string = "";
@@ -22,6 +27,11 @@ export class HttpResponse {
     }
 }
 
+/**
+ * Layout common utilities
+ * @class Layout
+ * @author Samael Fierro <sfstricks@hotmail.com>
+ */
 export class Layout {
     public constructor(
         {login = true, index = 0, path, component, title, description, icon, permission, helmet = false}: 
